@@ -1,0 +1,56 @@
+# Read more about SSH config files: https://linux.die.net/man/5/ssh_config
+Host gitlab.edgegamers.io
+    IdentityFile ~/.ssh/auth
+
+Host ssh.gitlab.edgegamers.io
+    IdentityFile ~/.ssh/auth
+
+Host gitlab.cs.wwu.edu
+    IdentityFile ~/.ssh/auth
+
+Host github.com
+    User git
+    IdentityFile ~/.ssh/auth
+
+Host egodev
+    HostName 104.128.62.130
+    User iboaz
+    IdentityFile ~/.ssh/yubikey
+
+Host egoprod1
+    HostName 104.128.58.192
+    User iboaz
+    IdentityFile ~/.ssh/yubikey
+
+Host egoprod2
+    HostName 104.128.48.251
+    User iboaz
+    IdentityFile ~/.ssh/yubikey
+
+Host egoweb
+    HostName 104.128.60.142
+    User iboaz
+    IdentityFile ~/.ssh/yubikey
+
+Host egorunner
+    HostName 104.128.62.131
+    User iboaz
+    IdentityFile ~/.ssh/yubikey
+
+Host home
+    HostName ssh.msws.xyz
+    ProxyCommand cloudflared access ssh --hostname %h
+    User iboaz
+    IdentityFile ~/.ssh/yubikey
+
+Host webdev
+    HostName 104.128.62.134
+    User iboaz
+    IdentityFile ~/.ssh/yubikey
+ 
+Host linux
+    HostName labs.cs.wwu.edu
+    Port 922
+    User boazi
+    IdentityFile ~/.ssh/yubikey
+
