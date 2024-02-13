@@ -9,7 +9,7 @@ git config --global user.signingKey ~/.ssh/yubikey
 git config --global pull.rebase false
 
 git config --global init.defaultBranch main
-git config --global push.autosetupremote=true
+git config --global push.autosetupremote true
 
 git config --global alias.ca 'commit -am'
 
