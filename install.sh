@@ -6,6 +6,7 @@ git config --global user.email "imodmaker@gmail.com"
 git config --global gpg.format ssh
 git config --global commit.gpgsign true
 git config --global user.signingKey ~/.ssh/yubikey
+git config --global pull.rebase false
 
 git config --global init.defaultBranch main
 git config --global push.autosetupremote=true
