@@ -13,7 +13,11 @@ git config --global push.autosetupremote true
 
 git config --global alias.ca 'commit -am'
 
-cp ./ssh_config ~/.ssh/config
+git clone git@github.com:MSWS/install.sh.git repo
+
+cp ./repo/ssh_config ~/.ssh/config
+
+rm -rf ./repo
 
 echo "eval $(ssh-agent -s) &>/dev/null" >> ~/.bashrc
 eval $(ssh-agent -s)
