@@ -8,22 +8,25 @@ Host ssh.gitlab.edgegamers.io
 Host gitlab.cs.wwu.edu
     IdentityFile ~/.ssh/auth
 
+Host gitlab.com
+    IdentityFile ~/.ssh/auth
+
 Host github.com
     User git
     IdentityFile ~/.ssh/auth
 
 Host egodev
-    HostName 104.128.62.130
+    HostName 66.118.246.78
     User iboaz
     IdentityFile ~/.ssh/yubikey
 
 Host egoprod1
-    HostName 104.128.58.192
+    HostName 66.118.246.15
     User iboaz
     IdentityFile ~/.ssh/yubikey
 
 Host egoprod2
-    HostName 104.128.48.251
+    HostName 66.118.246.20
     User iboaz
     IdentityFile ~/.ssh/yubikey
 
@@ -53,4 +56,3 @@ Host linux
     Port 922
     User boazi
     IdentityFile ~/.ssh/yubikey
-
